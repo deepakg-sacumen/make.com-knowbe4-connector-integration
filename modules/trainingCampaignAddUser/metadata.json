@@ -1,0 +1,8 @@
+{
+    "name": "trainingCampaignAddUser",
+    "label": "Add User to Training Campaign",
+    "description": "Adds a user to a training campaign",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

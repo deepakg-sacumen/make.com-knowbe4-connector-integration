@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "mutation { trainingCampaignClose(id: {{parameters.id}}) { errors { field placeholders reason recordId } node { active id name status } } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

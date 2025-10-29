@@ -1,0 +1,8 @@
+{
+    "name": "getEnrollment",
+    "label": "Get Enrollment",
+    "description": "Find an enrollment by ID",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

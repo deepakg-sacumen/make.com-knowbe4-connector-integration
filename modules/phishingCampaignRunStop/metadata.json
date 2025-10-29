@@ -1,0 +1,8 @@
+{
+    "name": "phishingCampaignRunStop",
+    "label": "Stop Phishing Campaign Run",
+    "description": "Stop a campaign run",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "mutation { groupDelete(ids: [{{parameters.selectGroup}}]) { nodes { id name status groupType updatedAt memberCount } } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

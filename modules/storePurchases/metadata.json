@@ -1,0 +1,8 @@
+{
+    "name": "storePurchases",
+    "label": "List Store Purchases",
+    "description": "Find all your store purchases",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "search"
+}

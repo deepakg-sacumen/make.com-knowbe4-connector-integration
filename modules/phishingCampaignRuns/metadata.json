@@ -1,0 +1,8 @@
+{
+    "name": "phishingCampaignRuns",
+    "label": "List Phishing Campaign Runs",
+    "description": "Find all campaign runs in account",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "search"
+}

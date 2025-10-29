@@ -1,0 +1,41 @@
+[
+    {
+        "name": "search",
+        "type": "text",
+        "label": "Search for groups by name"
+    },
+    {
+        "name": "status",
+        "type": "select",
+        "label": "Status",
+        "options": [
+            {
+                "label": "Active",
+                "value": "ACTIVE"
+            },
+            {
+                "label": "Archived",
+                "value": "ARCHIVED"
+            },
+            {
+                "label": "All",
+                "value": "ALL"
+            }
+        ]
+    },
+    {
+        "name": "type",
+        "type": "select",
+        "label": "Group Type",
+        "options": [
+            {
+                "label": "SMART",
+                "value": "SMART"
+            },
+            {
+                "label": "CONSOLE",
+                "value": "CONSOLE"
+            }
+        ]
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "selectGroup",
+        "type": "select",
+        "label": "Select Group",
+        "options": "rpc://listGroups",
+        "required": true
+    },
+    {
+        "name": "selectUsers",
+        "type": "select",
+        "label": "Select User(s)",
+        "options": "rpc://listUsers",
+        "multiple": true,
+        "required": true
+    }
+]

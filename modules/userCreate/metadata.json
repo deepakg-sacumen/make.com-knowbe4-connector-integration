@@ -1,0 +1,8 @@
+{
+    "name": "userCreate",
+    "label": "Create a User",
+    "description": "Create a User",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

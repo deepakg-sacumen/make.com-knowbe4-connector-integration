@@ -1,0 +1,28 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "{{listEnrollmentsFields(parameters)}}"
+    },
+    "response": {
+        "iterate": "{{body.data.enrollments.nodes}}",
+        "output": {
+            "enrollmentId": "{{item.id}}",
+            "enrollmentTitle": "{{item.enrollmentItem.title}}",
+            "trainingCampaignId": "{{item.trainingCampaign.id}}",
+            "trainingCampaignName": "{{item.trainingCampaign.name}}",
+            "status": "{{item.status}}",
+            "active": "{{item.active}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "{{listEnrollmentsFields(parameters)}}",
+            "variables": {
+                "page": "{{body.data.enrollments.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.enrollments.pagination.page < body.data.enrollments.pagination.pages}}"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "query { group(id: {{parameters.selectGroups}}) { accountId accountName accountNameWithDomain createdAt displayName groupType hasCampaignRuns id ldapObjectGuid memberCount name riskScore securityRoles { createdAt id name updatedAt userCount } status updatedAt userPhishingLocales } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

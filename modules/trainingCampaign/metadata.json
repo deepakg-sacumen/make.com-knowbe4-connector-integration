@@ -1,0 +1,8 @@
+{
+    "name": "trainingCampaign",
+    "label": "Get Training Campaign",
+    "description": "Find a training campaign by ID",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

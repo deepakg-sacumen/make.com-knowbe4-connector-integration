@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "mutation { userAddToGroups(groupIds: [{{parameters.selectGroups}}], userIds: [{{parameters.selectUsers}}]) { errors { field placeholders reason recordId } node { firstName email groupIds groupNamesConcat }}}"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

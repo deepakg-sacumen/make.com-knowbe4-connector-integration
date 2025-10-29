@@ -1,0 +1,24 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "query { storePurchases(per: 1000) { nodes { createdAt enrollmentCount hasAssociatedSoftDeletedTrainingCampaigns hidden id policyLocation policyRequired purchasedAt purchasedCourseId storeItemUuid updatedAt } pagination { page pages per totalCount } }}"
+    },
+    "response": {
+        "iterate": "{{body.data.storePurchases.nodes}}",
+        "output": {
+            "label": "{{item.id}}",
+            "value": "{{item}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "query StorePurchases($page: Int) { storePurchases(page: $page, per: 1000) { nodes { createdAt enrollmentCount hasAssociatedSoftDeletedTrainingCampaigns hidden id policyLocation policyRequired purchasedAt purchasedCourseId storeItemUuid updatedAt } pagination { page pages per totalCount } }}",
+            "variables": {
+                "page": "{{body.data.storePurchases.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.storePurchases.pagination.page < body.data.storePurchases.pagination.pages}}"
+    }
+}

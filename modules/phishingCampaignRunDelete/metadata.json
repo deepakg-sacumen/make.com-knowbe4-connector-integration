@@ -1,0 +1,8 @@
+{
+    "name": "phishingCampaignRunDelete",
+    "label": "Delete Phishing Campaign Run",
+    "description": "Deletes a phishing campaign run. Deletions are permanent and can't be undone.",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

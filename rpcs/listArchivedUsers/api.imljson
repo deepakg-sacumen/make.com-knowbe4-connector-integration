@@ -1,0 +1,24 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "query { users(type: ALL, status : ACTIVE, per: 1000) { nodes { firstName lastName id email } pagination { page pages } }}"
+    },
+    "response": {
+        "iterate": "{{body.data.users.nodes}}",
+        "output": {
+            "label": "{{item.email}}",
+            "value": "{{item.id}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "query Users($page: Int) { users(type: ALL, status: ACTIVE, page: $page, per: 1000) { nodes { firstName lastName id email } pagination { page pages } }}",
+            "variables": {
+                "page": "{{body.data.users.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.users.pagination.page < body.data.users.pagination.pages}}"
+    }
+}

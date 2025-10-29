@@ -1,0 +1,28 @@
+{
+	// Request
+	"url": "https://{{parameters.region}}.knowbe4.com/graphql", // Absolute URL to the API endpoint which validates credentials,
+	"method": "POST",
+	"body": {
+		"query": "query { account { accountOwner { email }}}"
+	},
+	"headers": { // Additional HTTP headers
+		"Authorization": "Bearer {{parameters.apiKey}}",
+		"accept": "application/json" // Authorizes user by API key, provided by user during the connection creation.
+	},
+
+	// Response handling
+	"response": {
+		"error": {
+			"401": {
+				"type": "InvalidAccessTokenError",
+				"message": "Connection failed"
+			},
+			"message": "{{if(contains(headers['Content-Type'],'json'), ifempty(body.errors[], '[' + statusCode + '] ' + body), 'Connection failed')}}"
+		}
+	},
+	"log": {
+		"sanitize": [ // Excludes sensitive parameters from logs.
+			"request.headers.authorization" // Omit HTTP header "Authorization".
+		]
+	}
+}

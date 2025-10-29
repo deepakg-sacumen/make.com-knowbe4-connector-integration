@@ -1,0 +1,8 @@
+{
+    "name": "groupCreate",
+    "label": "Create a Group",
+    "description": "Create a Group",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

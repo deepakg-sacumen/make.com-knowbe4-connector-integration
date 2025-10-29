@@ -1,0 +1,8 @@
+{
+    "name": "phishingCampaignRun",
+    "label": "Get Phishing Campaign Run",
+    "description": "Find a campaign run by ID",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

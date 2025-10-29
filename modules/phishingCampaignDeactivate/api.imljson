@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "mutation { phishingCampaignDeactivate(deactivate: {{parameters.deactivate}}, id: {{parameters.selectPhishingCampaigns}}) { errors { field placeholders reason recordId } node { active id name } } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

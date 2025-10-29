@@ -1,0 +1,8 @@
+{
+    "name": "users",
+    "label": "List Users",
+    "description": "Find all users for an account",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "search"
+}

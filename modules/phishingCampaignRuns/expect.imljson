@@ -1,0 +1,8 @@
+[
+    {
+        "name": "campaignId",
+        "type": "select",
+        "label": "Campaign Name",
+        "options": "rpc://listPhishingCampaings"
+    }
+]

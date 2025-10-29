@@ -1,0 +1,74 @@
+[
+    {
+        "name": "types",
+        "type": "select",
+        "label": "Type",
+        "multiple": true,
+        "options": [
+            {
+                "label": "PHISHING_SYSTEM",
+                "value": "PHISHING_SYSTEM"
+            },
+            {
+                "label": "PHISHING_USER",
+                "value": "PHISHING_USER"
+            },
+            {
+                "label": "PHISHING_COMMUNITY",
+                "value": "PHISHING_COMMUNITY"
+            },
+            {
+                "label": "TRAINING_USER",
+                "value": "TRAINING_USER"
+            },
+            {
+                "label": "TRAINING_SYSTEM",
+                "value": "TRAINING_SYSTEM"
+            },
+            {
+                "label": "PHISHING_MANAGED",
+                "value": "PHISHING_MANAGED"
+            },
+            {
+                "label": "TRAINING_MANAGED",
+                "value": "TRAINING_MANAGED"
+            },
+            {
+                "label": "PHYSICAL_QR",
+                "value": "PHYSICAL_QR"
+            },
+            {
+                "label": "PHYSICAL_QR_SYSTEM",
+                "value": "PHYSICAL_QR_SYSTEM"
+            },
+            {
+                "label": "CALLBACK_PHISHING",
+                "value": "CALLBACK_PHISHING"
+            },
+            {
+                "label": "CALLBACK_PHISHING_SYSTEM",
+                "value": "CALLBACK_PHISHING_SYSTEM"
+            },
+            {
+                "label": "CALLBACK_PHISHING_GREETING",
+                "value": "CALLBACK_PHISHING_GREETING"
+            },
+            {
+                "label": "CALLBACK_PHISHING_GREETING_SYSTEM",
+                "value": "CALLBACK_PHISHING_GREETING_SYSTEM"
+            },
+            {
+                "label": "CALLBACK_PHISHING_RESPONSE",
+                "value": "CALLBACK_PHISHING_RESPONSE"
+            },
+            {
+                "label": "CALLBACK_PHISHING_RESPONSE_SYSTEM",
+                "value": "CALLBACK_PHISHING_RESPONSE_SYSTEM"
+            },
+            {
+                "label": "MESSAGES_USER",
+                "value": "MESSAGES_USER"
+            }
+        ]
+    }
+]

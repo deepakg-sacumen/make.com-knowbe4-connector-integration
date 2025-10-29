@@ -1,0 +1,8 @@
+{
+    "name": "phishingCampaigns",
+    "label": "List Phishing Campaigns",
+    "description": "Find all Phishing Campaigns",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "search"
+}

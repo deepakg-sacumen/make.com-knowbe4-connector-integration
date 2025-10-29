@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "query { phishingCampaignRun(id: {{parameters.id}}) { aidaSelectedTemplate campaignNonRecipientsCount completedAt createdAt customReplyTo duration emailTemplateId fullRandomTemplate groupNames id landingPagePreview output phishDomain phishPronePercentage recipientCount replyDomainPrefix replyPhishDomainId scheduledCount sendingDuration startedAt status storeReplyContent totalAttachmentOpen totalBounced totalCallbackDataEntered totalCalled totalClicked totalDataEntered totalDelivered totalDropped totalFailed totalIgnored totalMacroEnabled totalOpened totalQrCodeScanned totalReplied totalReported totalScheduled updatedAt } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "campaignId",
+        "type": "select",
+        "label": "Select Campaign Name",
+        "options": "rpc://listPhishingCampaings",
+        "required": true
+    },
+    {
+        "name": "runId",
+        "type": "select",
+        "label": "Select Campaign Run",
+        "options": "rpc://listphishingCampaignRuns",
+        "required": true,
+        "help": "Please select the same Campaign Run as that of Campaign Name"
+    }
+]

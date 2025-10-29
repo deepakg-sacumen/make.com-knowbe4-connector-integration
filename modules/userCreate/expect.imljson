@@ -1,0 +1,24 @@
+[
+    {
+        "name": "userEmail",
+        "type": "text",
+        "label": "Email Address",
+        "required": true
+    },
+    {
+        "name": "firstName",
+        "type": "text",
+        "label": "First Name",
+        "required": true
+    },
+    {
+        "name": "lastName",
+        "type": "text",
+        "label": "Last Name"
+    },
+    {
+        "name": "jobTitle",
+        "type": "text",
+        "label": "Job Title"
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "query Groups { groups(status: ALL, per: 1000) { nodes { displayName id } pagination { page pages } }}"
+    },
+    "response": {
+        "iterate": "{{body.data.groups.nodes}}",
+        "output": {
+            "label": "{{item.displayName}}",
+            "value": "{{item.id}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "query Groups($page: Int) { groups(status: ALL, page: $page, per: 1000) { nodes { displayName id } pagination { page pages } }}",
+            "variables": {
+                "page": "{{body.data.groups.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.groups.pagination.page < body.data.groups.pagination.pages}}"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "name": "enrollments",
+    "label": "List Enrollments",
+    "description": "Find all enrollments for an account",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "search"
+}

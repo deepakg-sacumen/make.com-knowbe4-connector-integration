@@ -1,0 +1,10 @@
+[
+    {
+        "name": "selectGroup",
+        "type": "select",
+        "label": "Select the Group(s)",
+        "options": "rpc://listGroups",
+        "required": true,
+        "multiple": true
+    }
+]

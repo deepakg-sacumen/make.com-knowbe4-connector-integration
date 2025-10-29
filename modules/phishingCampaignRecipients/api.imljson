@@ -1,0 +1,24 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "query { phishingCampaignRecipients(campaignRunId: {{parameters.campaignId}}, page: 1, per: 1000) { nodes { attachmentOpen attachmentType bounceReason bounced browser browserVersion callbackDataEntered called campaignRecipientIgnoredFailure { browser browserVersion createdAt elapsedTime email failureCount failureType id ignored ipAddress os updatedAt } campaignRun { aidaSelectedTemplate campaignNonRecipientsCount completedAt createdAt customReplyTo duration emailTemplateId fullRandomTemplate groupNames id landingPagePreview output phishDomain phishPronePercentage recipientCount replyDomainPrefix replyPhishDomainId scheduledCount sendingDuration startedAt status storeReplyContent totalAttachmentOpen totalBounced totalCallbackDataEntered totalCalled totalClicked totalDataEntered totalDelivered totalDropped totalFailed totalIgnored totalMacroEnabled totalOpened totalQrCodeScanned totalReplied totalReported totalScheduled updatedAt } clicked clickedCount createdAt dataEntered delivered displayIp dropped email emailTemplateId failureDetails { date type } id ipAddress ipLocation macroEnabled opened os processed qrCodeScanned replied replyContent { attachments contentHtml downloadUrl from replyTo subject } reported scheduledAt updatedAt } pagination { page pages per totalCount } } }"
+    },
+    "response": {
+        "iterate": "{{body.data.phishingCampaignRecipients.nodes}}",
+        "output": {
+            "label": "{{item.campaign.email}}",
+            "value": "{{item}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "query phishingCampaignRecipients($page: Int) { phishingCampaignRecipients(page: $page, campaignRunId: {{parameters.campaignId}}, per: 1000) { nodes { attachmentOpen attachmentType bounceReason bounced browser browserVersion callbackDataEntered called campaignRecipientIgnoredFailure { browser browserVersion createdAt elapsedTime email failureCount failureType id ignored ipAddress os updatedAt } campaignRun { aidaSelectedTemplate campaignNonRecipientsCount completedAt createdAt customReplyTo duration emailTemplateId fullRandomTemplate groupNames id landingPagePreview output phishDomain phishPronePercentage recipientCount replyDomainPrefix replyPhishDomainId scheduledCount sendingDuration startedAt status storeReplyContent totalAttachmentOpen totalBounced totalCallbackDataEntered totalCalled totalClicked totalDataEntered totalDelivered totalDropped totalFailed totalIgnored totalMacroEnabled totalOpened totalQrCodeScanned totalReplied totalReported totalScheduled updatedAt } clicked clickedCount createdAt dataEntered delivered displayIp dropped email emailTemplateId failureDetails { date type } id ipAddress ipLocation macroEnabled opened os processed qrCodeScanned replied replyContent { attachments contentHtml downloadUrl from replyTo subject } reported scheduledAt updatedAt } pagination { page pages per totalCount } } }",
+            "variables": {
+                "page": "{{body.data.phishingCampaignRecipients.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.phishingCampaignRecipients.pagination.page < body.data.phishingCampaignRecipients.pagination.pages}}"
+    }
+}

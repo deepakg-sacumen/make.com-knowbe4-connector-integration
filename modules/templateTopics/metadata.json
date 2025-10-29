@@ -1,0 +1,8 @@
+{
+    "name": "templateTopics",
+    "label": "List Template Topics",
+    "description": "Find all template topics",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "search"
+}

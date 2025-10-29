@@ -1,0 +1,84 @@
+[
+    {
+        "name": "userId",
+        "type": "select",
+        "label": "Select User",
+        "required": true,
+        "options": "rpc://listUsers"
+    },
+    {
+        "name": "firstName",
+        "type": "text",
+        "label": "First Name"
+    },
+    {
+        "name": "lastName",
+        "type": "text",
+        "label": "Last Name"
+    },
+    {
+        "name": "employeeNumber",
+        "type": "text",
+        "label": "Employee Number"
+    },
+    {
+        "name": "employeeStartDate",
+        "type": "date",
+        "label": "Employee Start Date"
+    },
+    {
+        "name": "jobTitle",
+        "type": "text",
+        "label": "Job Title"
+    },
+    {
+        "name": "location",
+        "type": "text",
+        "label": "Location"
+    },
+    {
+        "name": "managerEmail",
+        "type": "email",
+        "label": "Manager Email"
+    },
+    {
+        "name": "managerName",
+        "type": "text",
+        "label": "Manager Name"
+    },
+    {
+        "name": "mobilePhoneNumber",
+        "type": "text",
+        "label": "Mobile Phone Number"
+    },
+    {
+        "name": "outOfOfficeStart",
+        "type": "date",
+        "label": "Out Of Office Start"
+    },
+    {
+        "name": "outOfOfficeEnd",
+        "type": "date",
+        "label": "Out Of Office End"
+    },
+    {
+        "name": "role",
+        "type": "select",
+        "label": "Role",
+        "required": true,
+        "options": [
+            {
+                "label": "USER",
+                "value": "USER"
+            },
+            {
+                "label": "ADMIN",
+                "value": "ADMIN"
+            },
+            {
+                "label": "STUDENT",
+                "value": "STUDENT"
+            }
+        ]
+    }
+]

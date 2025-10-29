@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "{{buildTrainingCampaignCreateMutation(parameters)}}"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

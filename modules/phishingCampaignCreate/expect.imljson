@@ -1,0 +1,705 @@
+[
+    {
+        "name": "name",
+        "type": "text",
+        "label": "Campaign Name",
+        "required": true
+    },
+    {
+        "name": "frequencyPeriod",
+        "type": "select",
+        "label": "Frequency",
+        "required": true,
+        "options": [
+            {
+                "label": "One Time",
+                "value": "ONETIME"
+            },
+            {
+                "label": "Weekly",
+                "value": "WEEK"
+            },
+            {
+                "label": "Bi Weekly",
+                "value": "BIWEEK"
+            },
+            {
+                "label": "Monthly",
+                "value": "MONTH"
+            },
+            {
+                "label": "Quarterly",
+                "value": "QUARTER"
+            }
+        ]
+    },
+    {
+        "name": "nextRun",
+        "type": "date",
+        "label": "Start Time",
+        "required": true
+    },
+    {
+        "name": "selectedGroups",
+        "type": "select",
+        "label": "Send to",
+        "options": "rpc://listGroups",
+        "multiple": true,
+        "required": true
+    },
+    {
+        "name": "timeZone",
+        "type": "select",
+        "label": "Time Zone",
+        "required": true,
+        "options": [
+            {
+                "label": "International Date Line West",
+                "value": "INTERNATIONAL_DATE_LINE_WEST"
+            },
+            {
+                "label": "American Samoa",
+                "value": "AMERICAN_SAMOA"
+            },
+            {
+                "label": "Midway Island",
+                "value": "MIDWAY_ISLAND"
+            },
+            {
+                "label": "Hawaii",
+                "value": "HAWAII"
+            },
+            {
+                "label": "Alaska",
+                "value": "ALASKA"
+            },
+            {
+                "label": "Pacific Time (US & Canada)",
+                "value": "PACIFIC_TIME_US_CANADA"
+            },
+            {
+                "label": "Tijuana",
+                "value": "TIJUANA"
+            },
+            {
+                "label": "Arizona",
+                "value": "ARIZONA"
+            },
+            {
+                "label": "Chihuahua",
+                "value": "CHIHUAHUA"
+            },
+            {
+                "label": "Mazatlan",
+                "value": "MAZATLAN"
+            },
+            {
+                "label": "Mountain Time (US & Canada)",
+                "value": "MOUNTAIN_TIME_US_CANADA"
+            },
+            {
+                "label": "Central America",
+                "value": "CENTRAL_AMERICA"
+            },
+            {
+                "label": "Central Time (US & Canada)",
+                "value": "CENTRAL_TIME_US_CANADA"
+            },
+            {
+                "label": "Guadalajara",
+                "value": "GUADALAJARA"
+            },
+            {
+                "label": "Mexico City",
+                "value": "MEXICO_CITY"
+            },
+            {
+                "label": "Monterrey",
+                "value": "MONTERREY"
+            },
+            {
+                "label": "Saskatchewan",
+                "value": "SASKATCHEWAN"
+            },
+            {
+                "label": "Bogota",
+                "value": "BOGOTA"
+            },
+            {
+                "label": "Eastern Time (US & Canada)",
+                "value": "EASTERN_TIME_US_CANADA"
+            },
+            {
+                "label": "Indiana (East)",
+                "value": "INDIANA_EAST"
+            },
+            {
+                "label": "Lima",
+                "value": "LIMA"
+            },
+            {
+                "label": "Quito",
+                "value": "QUITO"
+            },
+            {
+                "label": "Atlantic Time (Canada)",
+                "value": "ATLANTIC_TIME_CANADA"
+            },
+            {
+                "label": "Caracas",
+                "value": "CARACAS"
+            },
+            {
+                "label": "Georgetown",
+                "value": "GEORGETOWN"
+            },
+            {
+                "label": "La Paz",
+                "value": "LA_PAZ"
+            },
+            {
+                "label": "Puerto Rico",
+                "value": "PUERTO_RICO"
+            },
+            {
+                "label": "Santiago",
+                "value": "SANTIAGO"
+            },
+            {
+                "label": "Newfoundland",
+                "value": "NEWFOUNDLAND"
+            },
+            {
+                "label": "Brasilia",
+                "value": "BRASILIA"
+            },
+            {
+                "label": "Buenos Aires",
+                "value": "BUENOS_AIRES"
+            },
+            {
+                "label": "Greenland",
+                "value": "GREENLAND"
+            },
+            {
+                "label": "Montevideo",
+                "value": "MONTEVIDEO"
+            },
+            {
+                "label": "Mid-Atlantic",
+                "value": "MID_ATLANTIC"
+            },
+            {
+                "label": "Azores",
+                "value": "AZORES"
+            },
+            {
+                "label": "Cape Verde Is.",
+                "value": "CAPE_VERDE_IS"
+            },
+            {
+                "label": "Edinburgh",
+                "value": "EDINBURGH"
+            },
+            {
+                "label": "Lisbon",
+                "value": "LISBON"
+            },
+            {
+                "label": "London",
+                "value": "LONDON"
+            },
+            {
+                "label": "Monrovia",
+                "value": "MONROVIA"
+            },
+            {
+                "label": "UTC",
+                "value": "UTC"
+            },
+            {
+                "label": "Amsterdam",
+                "value": "AMSTERDAM"
+            },
+            {
+                "label": "Belgrade",
+                "value": "BELGRADE"
+            },
+            {
+                "label": "Berlin",
+                "value": "BERLIN"
+            },
+            {
+                "label": "Bern",
+                "value": "BERN"
+            },
+            {
+                "label": "Bratislava",
+                "value": "BRATISLAVA"
+            },
+            {
+                "label": "Brussels",
+                "value": "BRUSSELS"
+            },
+            {
+                "label": "Budapest",
+                "value": "BUDAPEST"
+            },
+            {
+                "label": "Casablanca",
+                "value": "CASABLANCA"
+            },
+            {
+                "label": "Copenhagen",
+                "value": "COPENHAGEN"
+            },
+            {
+                "label": "Dublin",
+                "value": "DUBLIN"
+            },
+            {
+                "label": "Ljubljana",
+                "value": "LJUBLJANA"
+            },
+            {
+                "label": "Madrid",
+                "value": "MADRID"
+            },
+            {
+                "label": "Paris",
+                "value": "PARIS"
+            },
+            {
+                "label": "Prague",
+                "value": "PRAGUE"
+            },
+            {
+                "label": "Rome",
+                "value": "ROME"
+            },
+            {
+                "label": "Sarajevo",
+                "value": "SARAJEVO"
+            },
+            {
+                "label": "Skopje",
+                "value": "SKOPJE"
+            },
+            {
+                "label": "Stockholm",
+                "value": "STOCKHOLM"
+            },
+            {
+                "label": "Vienna",
+                "value": "VIENNA"
+            },
+            {
+                "label": "Warsaw",
+                "value": "WARSAW"
+            },
+            {
+                "label": "West Central Africa",
+                "value": "WEST_CENTRAL_AFRICA"
+            },
+            {
+                "label": "Zagreb",
+                "value": "ZAGREB"
+            },
+            {
+                "label": "Zurich",
+                "value": "ZURICH"
+            },
+            {
+                "label": "Athens",
+                "value": "ATHENS"
+            },
+            {
+                "label": "Bucharest",
+                "value": "BUCHAREST"
+            },
+            {
+                "label": "Cairo",
+                "value": "CAIRO"
+            },
+            {
+                "label": "Harare",
+                "value": "HARARE"
+            },
+            {
+                "label": "Helsinki",
+                "value": "HELSINKI"
+            },
+            {
+                "label": "Jerusalem",
+                "value": "JERUSALEM"
+            },
+            {
+                "label": "Kaliningrad",
+                "value": "KALININGRAD"
+            },
+            {
+                "label": "Kyiv",
+                "value": "KYIV"
+            },
+            {
+                "label": "Pretoria",
+                "value": "PRETORIA"
+            },
+            {
+                "label": "Riga",
+                "value": "RIGA"
+            },
+            {
+                "label": "Sofia",
+                "value": "SOFIA"
+            },
+            {
+                "label": "Tallinn",
+                "value": "TALLINN"
+            },
+            {
+                "label": "Vilnius",
+                "value": "VILNIUS"
+            },
+            {
+                "label": "Baghdad",
+                "value": "BAGHDAD"
+            },
+            {
+                "label": "Istanbul",
+                "value": "ISTANBUL"
+            },
+            {
+                "label": "Kuwait",
+                "value": "KUWAIT"
+            },
+            {
+                "label": "Minsk",
+                "value": "MINSK"
+            },
+            {
+                "label": "Moscow",
+                "value": "MOSCOW"
+            },
+            {
+                "label": "Nairobi",
+                "value": "NAIROBI"
+            },
+            {
+                "label": "Riyadh",
+                "value": "RIYADH"
+            },
+            {
+                "label": "St. Petersburg",
+                "value": "ST_PETERSBURG"
+            },
+            {
+                "label": "Tehran",
+                "value": "TEHRAN"
+            },
+            {
+                "label": "Abu Dhabi",
+                "value": "ABU_DHABI"
+            },
+            {
+                "label": "Baku",
+                "value": "BAKU"
+            },
+            {
+                "label": "Muscat",
+                "value": "MUSCAT"
+            },
+            {
+                "label": "Samara",
+                "value": "SAMARA"
+            },
+            {
+                "label": "Tbilisi",
+                "value": "TBILISI"
+            },
+            {
+                "label": "Volgograd",
+                "value": "VOLGOGRAD"
+            },
+            {
+                "label": "Yerevan",
+                "value": "YEREVAN"
+            },
+            {
+                "label": "Kabul",
+                "value": "KABUL"
+            },
+            {
+                "label": "Ekaterinburg",
+                "value": "EKATERINBURG"
+            },
+            {
+                "label": "Islamabad",
+                "value": "ISLAMABAD"
+            },
+            {
+                "label": "Karachi",
+                "value": "KARACHI"
+            },
+            {
+                "label": "Tashkent",
+                "value": "TASHKENT"
+            },
+            {
+                "label": "Chennai",
+                "value": "CHENNAI"
+            },
+            {
+                "label": "Kolkata",
+                "value": "KOLKATA"
+            },
+            {
+                "label": "Mumbai",
+                "value": "MUMBAI"
+            },
+            {
+                "label": "New Delhi",
+                "value": "NEW_DELHI"
+            },
+            {
+                "label": "Sri Jayawardenepura",
+                "value": "SRI_JAYAWARDENEPURA"
+            },
+            {
+                "label": "Kathmandu",
+                "value": "KATHMANDU"
+            },
+            {
+                "label": "Almaty",
+                "value": "ALMATY"
+            },
+            {
+                "label": "Astana",
+                "value": "ASTANA"
+            },
+            {
+                "label": "Dhaka",
+                "value": "DHAKA"
+            },
+            {
+                "label": "Urumqi",
+                "value": "URUMQI"
+            },
+            {
+                "label": "Rangoon",
+                "value": "RANGOON"
+            },
+            {
+                "label": "Bangkok",
+                "value": "BANGKOK"
+            },
+            {
+                "label": "Hanoi",
+                "value": "HANOI"
+            },
+            {
+                "label": "Jakarta",
+                "value": "JAKARTA"
+            },
+            {
+                "label": "Krasnoyarsk",
+                "value": "KRASNOYARSK"
+            },
+            {
+                "label": "Novosibirsk",
+                "value": "NOVOSIBIRSK"
+            },
+            {
+                "label": "Beijing",
+                "value": "BEIJING"
+            },
+            {
+                "label": "Chongqing",
+                "value": "CHONGQING"
+            },
+            {
+                "label": "Hong Kong",
+                "value": "HONG_KONG"
+            },
+            {
+                "label": "Irkutsk",
+                "value": "IRKUTSK"
+            },
+            {
+                "label": "Kuala Lumpur",
+                "value": "KUALA_LUMPUR"
+            },
+            {
+                "label": "Perth",
+                "value": "PERTH"
+            },
+            {
+                "label": "Singapore",
+                "value": "SINGAPORE"
+            },
+            {
+                "label": "Taipei",
+                "value": "TAIPEI"
+            },
+            {
+                "label": "Ulaanbaatar",
+                "value": "ULAANBAATAR"
+            },
+            {
+                "label": "Osaka",
+                "value": "OSAKA"
+            },
+            {
+                "label": "Sapporo",
+                "value": "SAPPORO"
+            },
+            {
+                "label": "Seoul",
+                "value": "SEOUL"
+            },
+            {
+                "label": "Tokyo",
+                "value": "TOKYO"
+            },
+            {
+                "label": "Tokelau Is.",
+                "value": "TOKELAU_IS"
+            }
+        ]
+    },
+    {
+        "name": "selectedTemplateTopics",
+        "type": "select",
+        "label": "Template Topics",
+        "options": "rpc://listTemplateTopics",
+        "multiple": true,
+        "required": true
+    },
+    {
+        "name": "spreadEmails",
+        "type": "boolean",
+        "label": "Spread Emails",
+        "default": true,
+        "required": true
+    },
+    {
+        "name": "sendingDuration",
+        "type": "number",
+        "label": "Sending Duration",
+        "help": "The maximum sending period is 4 weeks",
+        "default": 3,
+        "required": false
+    },
+    {
+        "name": "sendingDurationUnits",
+        "type": "select",
+        "label": "Sending Duration Units",
+        "default": "DAYS",
+        "required": true,
+        "options": [
+            {
+                "label": "Days",
+                "value": "DAYS"
+            },
+            {
+                "label": "Weeks",
+                "value": "WEEKS"
+            },
+            {
+                "label": "Months",
+                "value": "MONTHS"
+            }
+        ]
+    },
+    {
+        "name": "businessHoursStartHour",
+        "type": "text",
+        "label": "Business Hours Start Hour",
+        "help": "Format: HH:MM (e.g., 09:00)",
+        "default": "08:00",
+        "required": false
+    },
+    {
+        "name": "businessHoursEndHour",
+        "type": "text",
+        "label": "Business Hours End Hour",
+        "help": "Format: HH:MM (e.g., 23:00)",
+        "default": "18:00",
+        "required": false
+    },
+    {
+        "name": "businessDays",
+        "type": "select",
+        "label": "Business Days",
+        "required": true,
+        "default": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "options": [
+            {
+                "label": "Sunday",
+                "value": 0
+            },
+            {
+                "label": "Monday",
+                "value": 1
+            },
+            {
+                "label": "Tuesday",
+                "value": 2
+            },
+            {
+                "label": "Wednesday",
+                "value": 3
+            },
+            {
+                "label": "Thursday",
+                "value": 4
+            },
+            {
+                "label": "Friday",
+                "value": 5
+            },
+            {
+                "label": "Saturday",
+                "value": 6
+            }
+        ],
+        "multiple": true
+    },
+    {
+        "name": "trackingDuration",
+        "type": "number",
+        "label": "Tracking Duration",
+        "help": "The maximum Tracking period is 6 months",
+        "min": 1,
+        "max": 6,
+        "default": 3,
+        "required": false
+    },
+    {
+        "name": "trackingDurationUnits",
+        "type": "select",
+        "label": "Tracking Duration Units",
+        "default": "DAYS",
+        "required": true,
+        "options": [
+            {
+                "label": "Days",
+                "value": "DAYS"
+            },
+            {
+                "label": "Weeks",
+                "value": "WEEKS"
+            },
+            {
+                "label": "Months",
+                "value": "MONTHS"
+            }
+        ]
+    }
+]

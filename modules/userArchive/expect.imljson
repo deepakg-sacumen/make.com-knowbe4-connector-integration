@@ -1,0 +1,10 @@
+[
+    {
+        "name": "selectUsers",
+        "type": "select",
+        "label": "Select User(s)",
+        "options": "rpc://listArchivedUsers",
+        "multiple": true,
+        "required": true
+    }
+]

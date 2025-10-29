@@ -1,0 +1,52 @@
+[
+    {
+        "name": "filter",
+        "type": "select",
+        "label": "Filter",
+        "options": [
+            {
+                "label": "Active",
+                "value": "ACTIVE"
+            },
+            {
+                "label": "Inactive",
+                "value": "INACTIVE"
+            },
+            {
+                "label": "Hidden",
+                "value": "HIDDEN"
+            },
+            {
+                "label": "Phish flip",
+                "value": "PHISHFLIP"
+            },
+            {
+                "label": "All",
+                "value": "ALL"
+            }
+        ]
+    },
+    {
+        "name": "type",
+        "type": "select",
+        "label": "Type",
+        "options": [
+            {
+                "label": "Standard",
+                "value": "STANDARD"
+            },
+            {
+                "label": "Phish flip",
+                "value": "PHISH_FLIP"
+            },
+            {
+                "label": "Callback",
+                "value": "CALLBACK"
+            },
+            {
+                "label": "All",
+                "value": "ALL"
+            }
+        ]
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "name": "filterGroups",
+        "type": "select",
+        "label": "Select Group(s)",
+        "options": "rpc://listGroups",
+        "multiple": true
+    },
+    {
+        "name": "filterNoGroups",
+        "type": "boolean",
+        "label": "Filter No Groups",
+        "required": true,
+        "default": false
+    },
+    {
+        "name": "managersOnly",
+        "type": "boolean",
+        "label": "Managers Only",
+        "required": true,
+        "default": false
+    },
+    {
+        "name": "status",
+        "type": "select",
+        "label": "Status",
+        "options": [
+            {
+                "label": "Active",
+                "value": "ACTIVE"
+            },
+            {
+                "label": "Archived",
+                "value": "ARCHIVED"
+            },
+            {
+                "label": "All",
+                "value": "ALL"
+            }
+        ]
+    },
+    {
+        "name": "type",
+        "type": "select",
+        "label": "Type",
+        "options": [
+            {
+                "label": "All",
+                "value": "ALL"
+            },
+            {
+                "label": "User",
+                "value": "USER"
+            },
+            {
+                "label": "Admin",
+                "value": "ADMIN"
+            },
+            {
+                "label": "Admin or Senior",
+                "value": "ADMIN_OR_SR"
+            },
+            {
+                "label": "Student",
+                "value": "STUDENT"
+            }
+        ]
+    }
+]

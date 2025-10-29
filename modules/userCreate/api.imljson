@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "mutation { userCreate(email: \"{{parameters.userEmail}}\", firstName: \"{{parameters.firstName}}\", lastName: \"{{parameters.lastName}}\" jobTitle: \"{{parameters.jobTitle}}\") { errors { placeholders reason recordId }node { admin archived archivedAt currentPpp department division email groupIds groupNamesConcat id jobTitle firstName lastName managerEmail managerName organization outOfOfficeEnd outOfOfficeStart riskScore role employeeNumber }}}"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

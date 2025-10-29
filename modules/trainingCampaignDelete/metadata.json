@@ -1,0 +1,8 @@
+{
+    "name": "trainingCampaignDelete",
+    "label": "Delete Training Campaign(s) ",
+    "description": "Deletes training campaigns. Deletions are permanent and can't be undone.",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

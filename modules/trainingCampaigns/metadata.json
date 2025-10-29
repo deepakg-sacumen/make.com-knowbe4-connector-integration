@@ -1,0 +1,8 @@
+{
+    "name": "trainingCampaigns",
+    "label": "List Training Campaigns",
+    "description": "Find all training campaign",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "search"
+}

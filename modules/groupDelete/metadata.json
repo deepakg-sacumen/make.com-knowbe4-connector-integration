@@ -1,0 +1,8 @@
+{
+    "name": "groupDelete",
+    "label": "Delete Groups",
+    "description": "Delete Groups. Deletions are permanent and can't be undone.",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

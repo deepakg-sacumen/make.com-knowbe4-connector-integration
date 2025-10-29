@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "mutation { trainingCampaignRemoveUser(trainingCampaignId: {{parameters.trainingCampaignId}}, userId: {{parameters.userId}}) { removed } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

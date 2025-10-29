@@ -1,0 +1,8 @@
+{
+    "name": "trainingCampaignEdit",
+    "label": "Edit Training Campaign",
+    "description": "Edit a training campaign in the current account",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

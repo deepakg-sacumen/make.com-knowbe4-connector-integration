@@ -1,0 +1,9 @@
+[
+    {
+        "name": "selectUser",
+        "type": "select",
+        "label": "Select User",
+        "options": "rpc://listUsers",
+        "required": true
+    }
+]

@@ -1,0 +1,8 @@
+{
+    "name": "userByEmail",
+    "label": "Get User by Email",
+    "description": "Find a single user by email",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

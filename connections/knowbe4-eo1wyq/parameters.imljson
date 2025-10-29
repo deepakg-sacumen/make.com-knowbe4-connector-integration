@@ -1,0 +1,38 @@
+[
+    {
+        "name": "apiKey",
+        "type": "password",
+        "label": "API Key",
+        "required": true,
+        "editable": true
+    },
+    {
+        "name": "region",
+        "type": "select",
+        "label": "Region",
+        "required": true,
+        "editable": true,
+        "options": [
+            {
+                "label": "US",
+                "value": "training"
+            },
+            {
+                "label": "EU",
+                "value": "eu"
+            },
+            {
+                "label": "CA",
+                "value": "ca"
+            },
+            {
+                "label": "UK",
+                "value": "uk"
+            },
+            {
+                "label": "DE",
+                "value": "de"
+            }
+        ]
+    }
+]

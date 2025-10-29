@@ -1,0 +1,8 @@
+{
+    "name": "getGroup",
+    "label": "Get Group",
+    "description": "Find a group for an account",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

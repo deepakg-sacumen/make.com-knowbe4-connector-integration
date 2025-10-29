@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "query { phishingCampaign(id: {{parameters.id}}) { active aidaSelectedTemplate allUsers businessDays campaignType clickedGroup { accountId accountName accountNameWithDomain createdAt displayName groupType hasCampaignRuns id ldapObjectGuid memberCount name riskBooster riskScore status updatedAt userPhishingLocales } createdAt emailTemplateTranslationUuid frequencyPeriod groups { accountId accountName accountNameWithDomain createdAt displayName groupType hasCampaignRuns id ldapObjectGuid memberCount name riskBooster riskScore status updatedAt userPhishingLocales } hideFromReports id isHideLocked isPhishflip isRecurring isSeiEnabled lastRun { aidaSelectedTemplate campaignNonRecipientsCount completedAt createdAt customReplyTo duration emailTemplateId fullRandomTemplate groupNames id landingPagePreview output phishDomain phishPronePercentage replyDomainPrefix replyPhishDomainId scheduledCount sendingDuration startedAt status storeReplyContent updatedAt } lastRunDate name nextRun overridePhishingLanguages phishDomain { active createdAt hidden id name updatedAt } rating replyDomainPrefix replyPhishDomain { active createdAt hidden id name updatedAt } selectedGroups selectedTemplateTopics sendEmailAfterRun sendingDuration sendingDurationUnits spreadEmails storeFullCallbackPhoneNumber storeReplyContent templateSelection templateTopics { createdAt disabledByDefault id name ordering templateCount topicType updatedAt } timeZone trackOutOfOfficeReplies trackReplies trackingDuration trackingDurationUnits updatedAt } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

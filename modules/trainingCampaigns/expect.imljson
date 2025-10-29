@@ -1,0 +1,53 @@
+[
+    {
+        "name": "filter",
+        "type": "select",
+        "label": "Filter",
+        "options": [
+            {
+                "label": "Active",
+                "value": "ACTIVE"
+            },
+            {
+                "label": "Inactive",
+                "value": "INACTIVE"
+            },
+            {
+                "label": "All",
+                "value": "ALL"
+            }
+        ]
+    },
+    {
+        "name": "statuses",
+        "type": "select",
+        "label": "Statuses",
+        "multiple": true,
+        "options": [
+            {
+                "label": "Created",
+                "value": "CREATED"
+            },
+            {
+                "label": "Enrolling",
+                "value": "ENROLLING"
+            },
+            {
+                "label": "In Progress",
+                "value": "IN_PROGRESS"
+            },
+            {
+                "label": "Closed",
+                "value": "CLOSED"
+            },
+            {
+                "label": "Completed",
+                "value": "COMPLETED"
+            },
+            {
+                "label": "Test Mode",
+                "value": "TESTMODE"
+            }
+        ]
+    }
+]

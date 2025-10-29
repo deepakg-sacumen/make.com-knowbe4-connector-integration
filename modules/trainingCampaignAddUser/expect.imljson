@@ -1,0 +1,16 @@
+[
+    {
+        "name": "trainingCampaignId",
+        "type": "select",
+        "label": "Select Campaign Name",
+        "options": "rpc://listTrainingCampaigns",
+        "required": true
+    },
+    {
+        "name": "userId",
+        "type": "select",
+        "label": "Select User",
+        "options": "rpc://listUsers",
+        "required": true
+    }
+]

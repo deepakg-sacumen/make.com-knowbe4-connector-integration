@@ -1,0 +1,24 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "{{listTemplateTopicsFields(parameters)}}"
+    },
+    "response": {
+        "iterate": "{{body.data.templateTopics.nodes}}",
+        "output": {
+            "label": "{{item.name}}",
+            "value": "{{item}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "{{listTemplateTopicsPaginationFields(parameters)}}",
+            "variables": {
+                "page": "{{body.data.templateTopics.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.templateTopics.pagination.page < body.data.templateTopics.pagination.pages}}"
+    }
+}

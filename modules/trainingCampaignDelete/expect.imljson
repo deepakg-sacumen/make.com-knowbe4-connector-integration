@@ -1,0 +1,10 @@
+[
+    {
+        "name": "ids",
+        "type": "select",
+        "label": "Select Campaign Name(s)",
+        "options": "rpc://listTrainingCampaigns",
+        "required": true,
+        "multiple": true
+    }
+]

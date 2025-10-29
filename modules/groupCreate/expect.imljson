@@ -1,0 +1,26 @@
+[
+    {
+        "name": "name",
+        "type": "text",
+        "label": "Group Name",
+        "required": true,
+        "help": "The name should be atleast 4 characters long"
+    },
+    {
+        "name": "groupType",
+        "type": "select",
+        "label": "Group Type",
+        "default": "CONSOLE",
+        "required": true,
+        "options": [
+            {
+                "label": "SMART",
+                "value": "SMART"
+            },
+            {
+                "label": "CONSOLE",
+                "value": "CONSOLE"
+            }
+        ]
+    }
+]

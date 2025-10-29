@@ -1,0 +1,8 @@
+{
+    "name": "userDeleteMemberships",
+    "label": "Remove Users from Group",
+    "description": "Removes a collections of users from a specific group. Deletions are permanent and can't be undone.",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

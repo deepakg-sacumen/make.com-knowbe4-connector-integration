@@ -1,0 +1,8 @@
+{
+    "name": "trainingCampaignClose",
+    "label": "Close Training Campaign",
+    "description": "Marks a training campaign as closed",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

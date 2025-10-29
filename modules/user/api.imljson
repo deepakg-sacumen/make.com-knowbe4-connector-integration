@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "query { user(id: {{parameters.selectUser}}) { admin archived archivedAt currentPpp department division email emailAliases { createdAt email id primary updatedAt } employeeNumber firstName groupIds groupNamesConcat id jobTitle lastName managerEmail managerName mandatoryEnrollments { acknowledgeable active certifiable certificateUrl completed completedAt completedByImpersonation completionStatus createdAt enrollmentItemType expiresAt extendedExpiresAt forcePassed id lastStartedAt lastUsedLanguage orderedLanguageOptions pastDue pastDueExtended policyAcknowledged policyAcknowledgedAt score scoreRaw scoreToDisplay selectedLanguage showScore started startedAt state status statusString storePurchaseId successStatus theme timeSpentInSeconds totalScore totalTime trackableCourse type updatedAt } organization outOfOfficeEnd outOfOfficeStart riskScore role } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

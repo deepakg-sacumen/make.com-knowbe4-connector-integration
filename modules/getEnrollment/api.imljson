@@ -1,0 +1,13 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "query { enrollment(id: {{parameters.id}}) { active completed completedAt completionStatus enrollmentItem { ...on KnowledgeRefresher { assessmentType description id title } ...on Policy { assessmentType description id title } ...on PurchasedCourse { assessmentType description id title } } enrollmentItemType expiresAt forcePassed id knowledgeRefresherEnrollment { active completionStatus id pastDue policyAcknowledged policyAcknowledgedAt score status totalScore totalTime } pastDue policyAcknowledged policyAcknowledgedAt score status trainingCampaign { id name totalUsers } user { email firstName lastName id } } }"
+    },
+    "response": {
+        "output": {
+            "data": "{{body.data}}",
+            "errors": "{{body.errors}}"
+        }
+    }
+}

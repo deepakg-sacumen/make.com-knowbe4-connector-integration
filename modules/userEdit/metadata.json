@@ -1,0 +1,8 @@
+{
+    "name": "userEdit",
+    "label": "Edit a User",
+    "description": "Edit a User",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

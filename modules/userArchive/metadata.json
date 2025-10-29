@@ -1,0 +1,8 @@
+{
+    "name": "userArchive",
+    "label": "Archive Users",
+    "description": "Archive a collection of users",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

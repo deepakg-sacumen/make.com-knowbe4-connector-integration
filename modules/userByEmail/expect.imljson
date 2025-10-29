@@ -1,0 +1,8 @@
+[
+    {
+        "name": "userEmail",
+        "type": "email",
+        "label": "Email",
+        "required": true
+    }
+]

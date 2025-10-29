@@ -1,0 +1,8 @@
+{
+    "name": "user",
+    "label": "Get User",
+    "description": "Find a single user",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

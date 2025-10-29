@@ -1,0 +1,24 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "{{listPhishingCampaignsFields(parameters)}}"
+    },
+    "response": {
+        "iterate": "{{body.data.phishingCampaigns.nodes}}",
+        "output": {
+            "label": "{{item.name}}",
+            "value": "{{item}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "{{listPhishingCampaignPaginationFields(parameters)}}",
+            "variables": {
+                "page": "{{body.data.phishingCampaigns.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.phishingCampaigns.pagination.page < body.data.phishingCampaigns.pagination.pages}}"
+    }
+}

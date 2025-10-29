@@ -1,0 +1,8 @@
+{
+    "name": "userAddToGroups",
+    "label": "Add Users to Groups",
+    "description": "Adds a collections of users to a collection of classic groups",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

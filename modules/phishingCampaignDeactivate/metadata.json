@@ -1,0 +1,8 @@
+{
+    "name": "phishingCampaignDeactivate",
+    "label": "Deactivate Phishing Campaign",
+    "description": "Deactivate or activate a phishing campaign",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

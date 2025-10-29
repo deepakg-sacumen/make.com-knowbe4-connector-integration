@@ -1,0 +1,8 @@
+{
+    "name": "groupArchive",
+    "label": "Archive Groups",
+    "description": "Archive/Unarchive Groups",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "mutation PhishingCampaignCreate { phishingCampaignCreate(attributes: { name: \"{{parameters.name}}\", frequencyPeriod: {{parameters.frequencyPeriod}}, selectedGroups: [{{parameters.selectedGroups}}], nextRun: \"{{parameters.nextRun}}\", timeZone: {{parameters.timeZone}}, selectedTemplateTopics: [{{parameters.selectedTemplateTopics}}], spreadEmails: {{parameters.spreadEmails}}, sendingDuration: {{parameters.sendingDuration}}, sendingDurationUnits: {{parameters.sendingDurationUnits}}, businessHoursStartHour: \"{{parameters.businessHoursStartHour}}\", businessHoursEndHour: \"{{parameters.businessHoursEndHour}}\", businessDays: [{{parameters.businessDays}}], trackingDuration: {{parameters.trackingDuration}}, trackingDurationUnits: {{parameters.trackingDurationUnits}} }) { errors { field placeholders reason recordId } node { createdAt campaignType id name nextRun spreadEmails frequencyPeriod selectedGroups timeZone selectedTemplateTopics} } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

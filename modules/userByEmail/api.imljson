@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "query { userByEmail(email: \"{{parameters.userEmail}}\") { admin archived archivedAt companyName confirmedAt currentPpp currentSignInIp customDate1 customDate2 customField1 customField2 customField3 customField4 department division email emailAliases { email id primary } employeeNumber employeeStartDate extension firstName groups { name id status } hasDirectReports id jobTitle language lastName lastSignInAt ldapEnabled location managerEmail managerName mobileAppEnabled mobilePhoneNumber organization outOfOfficeUntil outOfOfficeStart passlessEnabled passlessExpiresIn phoneNumber riskBooster riskScore role samlEnabled securityRoles { id name } timeZone userUrl } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

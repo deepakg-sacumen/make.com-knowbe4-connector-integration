@@ -1,0 +1,36 @@
+[
+    {
+        "name": "trainingCampaignId",
+        "type": "select",
+        "label": "Select Campaign Name",
+        "options": "rpc://listTrainingCampaigns",
+        "required": true
+    },
+    {
+        "name": "status",
+        "type": "select",
+        "label": "Status",
+        "options": [
+            {
+                "label": "Not Started",
+                "value": "NOT_STARTED"
+            },
+            {
+                "label": "In Progress",
+                "value": "IN_PROGRESS"
+            },
+            {
+                "label": "Completed",
+                "value": "COMPLETED"
+            },
+            {
+                "label": "Incomplete",
+                "value": "INCOMPLETE"
+            },
+            {
+                "label": "Past Due",
+                "value": "PAST_DUE"
+            }
+        ]
+    }
+]

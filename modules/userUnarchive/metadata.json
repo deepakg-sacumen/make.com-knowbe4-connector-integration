@@ -1,0 +1,8 @@
+{
+    "name": "userUnarchive",
+    "label": "Unarchive Users",
+    "description": "Unarchive a collection of users",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

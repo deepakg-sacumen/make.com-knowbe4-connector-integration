@@ -1,0 +1,25 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "query { phishingCampaigns(filter: ALL, per: 1000, type: ALL) { nodes { id name frequencyPeriod } pagination { page pages } }}"
+    },
+    "response": {
+        "iterate": "{{body.data.phishingCampaigns.nodes}}",
+        "output": {
+            "label": "{{item.name}}",
+            "value": "{{item.id}}",
+            "frequencyPeriod": "{{item.frequencyPeriod}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "query PhishingCampaigns($page: Int) { phishingCampaigns(filter: ALL, page: $page, per: 1000, type: ALL) { nodes { id name frequencyPeriod} pagination { page pages } }}",
+            "variables": {
+                "page": "{{body.data.phishingCampaigns.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.phishingCampaigns.pagination.page < body.data.phishingCampaigns.pagination.pages}}"
+    }
+}

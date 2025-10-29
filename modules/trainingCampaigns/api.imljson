@@ -1,0 +1,24 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "body": {
+        "query": "{{listTrainingCampaignsFields(parameters)}}"
+    },
+    "response": {
+        "iterate": "{{body.data.trainingCampaigns.nodes}}",
+        "output": {
+            "label": "{{item.name}}",
+            "value": "{{item}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "{{listTrainingCampaignsPaginationFields(parameters)}}",
+            "variables": {
+                "page": "{{body.data.trainingCampaigns.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.trainingCampaigns.pagination.page < body.data.trainingCampaigns.pagination.pages}}"
+    }
+}

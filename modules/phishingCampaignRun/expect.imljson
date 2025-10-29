@@ -1,0 +1,9 @@
+[
+    {
+        "name": "id",
+        "type": "select",
+        "label": "Phishing Campaign Run",
+        "options": "rpc://listphishingCampaignRuns",
+        "required": true
+    }
+]

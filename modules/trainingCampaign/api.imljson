@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "query { trainingCampaign(id: {{parameters.id}}) { active allowPastDueCompletions allowSurveys autoEnroll createdAt endCampaignOption endsAt enrollmentDuration enrollmentDurationType groups { accountId accountName accountNameWithDomain createdAt displayName groupType hasCampaignRuns id ldapObjectGuid memberCount name riskBooster riskScore status updatedAt userPhishingLocales } name notifications { adminEmailTemplateId auditLogDisplay createdAt deliveryMethod emailTemplateId enabled enrollmentFilter fallbackEmail id managerEmailTemplateId messageType offsetNumDays processedAt recipientUserIds rescheduleOffset trainingCampaignId trainingCampaignName updatedAt } percentComplete relativeDuration selectedContent selectedGroups status totalUsers userEnrollments(userId: {{parameters.userId}}) { acknowledgeable active certifiable certificateUrl completed completedAt completedByImpersonation completionStatus createdAt enrollmentItemType expiresAt extendedExpiresAt forcePassed id lastStartedAt lastUsedLanguage orderedLanguageOptions pastDue pastDueExtended policyAcknowledged policyAcknowledgedAt score scoreRaw scoreToDisplay selectedLanguage showScore started startedAt state status statusString storePurchaseId successStatus theme timeSpentInSeconds totalScore totalTime trackableCourse type updatedAt } } }"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

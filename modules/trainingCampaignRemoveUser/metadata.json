@@ -1,0 +1,8 @@
+{
+    "name": "trainingCampaignRemoveUser",
+    "label": "Remove User from Training Campaign",
+    "description": "Removes a user from a training campaign",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "action"
+}

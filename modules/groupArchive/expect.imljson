@@ -1,0 +1,16 @@
+[
+    {
+        "name": "archive",
+        "type": "boolean",
+        "required": true,
+        "label": "Archive"
+    },
+    {
+        "name": "selectGroups",
+        "type": "select",
+        "label": "Select Group(s)",
+        "required": true,
+        "options": "rpc://listGroups",
+        "multiple": true
+    }
+]

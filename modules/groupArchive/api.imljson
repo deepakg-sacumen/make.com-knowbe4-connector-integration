@@ -1,0 +1,14 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "mutation { groupArchive(archive: {{parameters.archive}}, ids: [{{parameters.selectGroups}}]) { errors { field placeholders reason recordId } nodes { accountId accountName accountNameWithDomain createdAt displayName groupType hasCampaignRuns id ldapObjectGuid memberCount name riskScore status updatedAt userPhishingLocales }}}"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

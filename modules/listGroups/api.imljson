@@ -1,0 +1,28 @@
+{
+    "url": "/graphql",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+        "query": "{{listGroupsFields(parameters)}}"
+    },
+    "response": {
+        "iterate": "{{body.data.groups.nodes}}",
+        "output": {
+            "label": "{{item.displayName}}",
+            "value": "{{item}}"
+        }
+    },
+    "pagination": {
+        "mergeWithParent": true,
+        "body": {
+            "query": "{{listGroupsPaginationFields(parameters)}}",
+            "variables": {
+                "page": "{{body.data.groups.pagination.page + 1}}"
+            }
+        },
+        "condition": "{{body.data.groups.pagination.page < body.data.groups.pagination.pages}}"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "name": "phishingCampaignRecipients",
+    "label": "List Phishing Campaign Recipients",
+    "description": "Find all the campaign recipients in a campaign run",
+    "connection": "knowbe4-eo1wyq",
+    "webhook": null,
+    "type": "search"
+}
